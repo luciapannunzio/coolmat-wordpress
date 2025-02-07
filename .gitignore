@@ -1,0 +1,24 @@
+# Ignorar el archivo de configuración de WordPress
+wp-config.php
+
+# Ignorar la carpeta de uploads (archivos multimedia)
+wp-content/uploads
+
+# Ignorar archivos de entorno (si los usas)
+.env
+
+# Ignorar archivos de IDE (si usas un editor como VSCode o PHPStorm)
+.idea
+.vscode
+
+# Ignorar node_modules (si usas herramientas de desarrollo como npm)
+node_modules
+
+# Ignorar archivos de caché (si usas plugins de caché)
+wp-content/cache
+
+# Ignorar archivos de registro (logs)
+*.log
+
+# Ignorar archivos temporales
+*.tmp

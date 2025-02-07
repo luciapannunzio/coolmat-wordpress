@@ -1,0 +1,421 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+body {
+    font-family: 'Hanna', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.site-header {
+    padding: 30px;
+    border-bottom: solid 1px #CCC;
+}
+
+.header-inner {
+    /* We use flexbox to align the header content automatically ad justify the space between the elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Here we have a reusable class for our inner container */
+.container {
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo,
+.language-select {
+    display: block;
+    width: 80px;
+}
+
+.language-select {
+    text-align: right;
+    font-size: 12px;
+}
+
+.menu {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.menu-item {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: lowercase;
+}
+
+.hero {
+    padding-top: 160px;
+    padding-bottom: 220px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url('../assets/intro-bg.svg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* .hero-inner { } */
+
+.hero-text {
+    font-size: 180px;
+    line-height: 1;
+    color: #ff0066;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-sitename {
+    color: #000;
+}
+
+.hero-description {
+    margin: 0;
+    position: absolute;
+    bottom: 48px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.magenta {
+    color: #ff0066;
+}
+
+.intro {
+    background-image: url('../assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro-inner {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    /* 20% black text shadow */
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.20);
+}
+
+.intro-title {
+    font-size: 20px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 1px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    display: inline-block;
+}
+
+.intro-description {
+    font-size: 50px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.yellow {
+    color: #F8E71C;
+}
+
+.entry-header {
+    padding: 10px 20px;
+    background-color: #ff0066;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entry-title,
+.entry-price {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    line-height: 1;
+}
+
+.entry-title {
+    text-transform: lowercase;
+}
+
+/* By default wordpress sets width and height on our images, so we need to override this using !important css rules. Is not a good css practice, but it's the only way that we can overwrite these atributes */
+/* Now we can see the images grow and shrink with size of the page  */
+.wp-post-image {
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important;
+    display: block;
+}
+
+.post-thumbnail {
+    display: block;
+    /* disable the link from being clicked */
+    pointer-events: none;
+}
+
+.section-heading {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px #CCC;
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+}
+
+/*
+
+1220px wide grid
+2x3 grid
+20px space horizontally
+50px space vertically
+
+*/
+
+.grid {
+    display: grid;
+    /* This tells us we want to have 2 columns */
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post {
+    position: relative;
+    padding-top: 50px;
+}
+
+.entry-number {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border: solid 15px #ff0066;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff0066;
+    z-index: 1;
+}
+
+/* make our text appear on top of our number */
+.entry-title,
+.entry-price {
+    position: relative;
+    z-index: 2;
+}
+
+/* .entry-content p {
+    margin: 0;
+} */
+
+.location-info {
+    display: flex;
+    align-items: center;
+}
+
+.location-description {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-description h3 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.location-description p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* we create ourselves a box that has a 1.3 x 1 box, using the paddin-bottom trcik (also known as aspect ratio box in css  */
+.map-inner {
+    position: relative;
+    padding-bottom: 75%;
+}
+
+/* we nullify the default width and height  */
+.map-inner iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.site-footer {
+    padding: 50px 30px 20px 30px;
+    border-top: solid 1px #CCC;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.site-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-link,
+.social-link img {
+    margin-left: 5px;
+}
+
+/* Class to reuse the lowercase */
+.lowercase {
+    text-transform: lowercase;
+}
+
+/* wordpress automatically inserts paragraphs, so we need to be wary of this when styling things up  */
+.intro-description p {
+    margin: 0;
+    /* font-family: 'Hanna', sans-serif; */
+}
+
+
+
+/* Responsive style */
+
+/* This code will only get used when the browser viewport is below 1110px wide */
+@media (max-width: 1100px) {
+
+    .entry-number {
+        width: 60px;
+        height: 60px;
+        border-width: 10px;
+    }
+
+    .post {
+        padding-top: 45px;
+    }
+
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 160px;
+    }
+
+    .hero-text {
+        font-size: 64px;
+    }
+
+    .intro {
+        padding-top: 105px;
+        padding-bottom: 125px;
+    }
+
+    .intro-title,
+    .intro-description {
+        /* we use a relative font-size, where each character is equal to 4% of the viewport width (vw = viewport width) */
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .site-header {
+        padding: 20px;
+    }
+
+    .logo,
+    .language-select {
+        width: 50px;
+    }
+
+    .menu-item {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    /* this hides the 'ducing cool mat' part on the first link */
+    .menu-item span {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-text {
+        font-size: 64px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .intro {
+        padding-top: 85px;
+        padding-bottom: 105px;
+    }
+
+    .intro-title {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .intro-description {
+        font-size: 36px;
+    }
+
+    /* so everything displays as a solid text block */
+    .intro-description br {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .entry-number {
+        width: 30px;
+        height: 30px;
+        border-width: 4px;
+    }
+
+    .post {
+        padding-top: 19px;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+    .hero-description {
+        bottom: 20px;
+    }
+
+    .intro-description {
+        font-size: 30px;
+    }
+}
