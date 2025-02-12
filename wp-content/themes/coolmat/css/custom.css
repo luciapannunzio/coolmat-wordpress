@@ -197,6 +197,9 @@ a {
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
+    
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .post {
@@ -301,7 +304,9 @@ a {
     /* font-family: 'Hanna', sans-serif; */
 }
 
-
+.locations {
+   margin-bottom: 50px;
+}
 
 /* Responsive style */
 
@@ -391,6 +396,13 @@ a {
     /* so everything displays as a solid text block */
     .intro-description br {
         display: none;
+    }
+
+    .grid {
+        /* grid into a single column */
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
