@@ -1,9 +1,9 @@
 # Coolmat-WordPress
-<img width="257" alt="cool-mat" src="https://github.com/user-attachments/assets/d02f57bb-d034-4e3a-9520-f73b811e5242" />
-<img width="1208" alt="cool-mat-1" src="https://github.com/user-attachments/assets/22071beb-419a-493e-bad1-65fc65bfdf51" />
-<img width="1205" alt="cool-mat-2" src="https://github.com/user-attachments/assets/c351011c-34d8-43ee-85e2-cae31d552ffd" />
-<img width="1203" alt="cool-mat-3" src="https://github.com/user-attachments/assets/1a43c6c6-6145-4679-8626-2e2957bdbf00" />
-<img width="1206" alt="cool-mat-4" src="https://github.com/user-attachments/assets/1dae5219-4dae-4f5f-946b-a519a3059d83" />
+<img width="257" alt="cool-mat-1" src="https://github.com/user-attachments/assets/786e45d9-12a2-4411-9ef8-90be468ddbdb" />
+<img width="1209" alt="cool-mat-2" src="https://github.com/user-attachments/assets/7fa83fd3-738c-4ba7-9e7c-5c3a0b3b33a2" />
+<img width="1207" alt="cool-mat-3" src="https://github.com/user-attachments/assets/5ac83ce7-a726-446a-8b30-7bf709cb867b" />
+<img width="1206" alt="cool-mat-4" src="https://github.com/user-attachments/assets/fdb73421-ee32-4ee3-a7a8-dc55e772b504" />
+<img width="1209" alt="cool-mat-5" src="https://github.com/user-attachments/assets/d3f93bcd-4a08-4210-8ffc-b1da922986cc" />
 
 
 
@@ -13,8 +13,7 @@
 
 
 
-  
-  
+
   
   * * *
 
@@ -63,6 +62,7 @@
  - [ ] json server
  - [x] PHP
  - [x] phpMyAdmin
+ - [x] MAMP
 
  
  * * *
