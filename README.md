@@ -1,5 +1,9 @@
 # Coolmat-WordPress
-![cool-mat-en](https://github.com/user-attachments/assets/1617ec5c-c659-4bf2-a0ec-9f4f7045a543)
+<img width="257" alt="cool-mat" src="https://github.com/user-attachments/assets/d02f57bb-d034-4e3a-9520-f73b811e5242" />
+<img width="1208" alt="cool-mat-1" src="https://github.com/user-attachments/assets/22071beb-419a-493e-bad1-65fc65bfdf51" />
+<img width="1205" alt="cool-mat-2" src="https://github.com/user-attachments/assets/c351011c-34d8-43ee-85e2-cae31d552ffd" />
+<img width="1203" alt="cool-mat-3" src="https://github.com/user-attachments/assets/1a43c6c6-6145-4679-8626-2e2957bdbf00" />
+<img width="1206" alt="cool-mat-4" src="https://github.com/user-attachments/assets/1dae5219-4dae-4f5f-946b-a519a3059d83" />
 
 
 
